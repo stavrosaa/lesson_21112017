@@ -1,15 +1,22 @@
  static void Main(string[] args)
         {
           //print your age
-            Console.Write("what is your age?: ");
+           Console.WriteLine("insert your age?;");
             string myAge = Console.ReadLine();
-            Console.WriteLine(myAge);
             int age = int.Parse(myAge);
-            if (age >= 18)
+            Console.Write("your age is : "+ age);
+            // if
+            if (age<18)
             {
-                Console.WriteLine("you are adult");
-             }
+                Console.WriteLine("you are small ");
+            }
             else
             {
-                Console.WriteLine(" you are not adult");
-            }
+                if (age>=18 && age<65)
+                        {
+                    Console.WriteLine("mudium");
+                }
+                else
+                    if (age>=65)
+                {
+                    Console.WriteLine("large");
